@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 80 25% 97%;
+    --foreground: 150 10% 25%;
+
+    --card: 80 20% 95%;
+    --card-foreground: 150 10% 25%;
+
+    --popover: 80 25% 97%;
+    --popover-foreground: 150 10% 25%;
+
+    --primary: 145 30% 55%;
+    --primary-foreground: 80 25% 97%;
+
+    --secondary: 40 30% 92%;
+    --secondary-foreground: 150 10% 30%;
+
+    --muted: 80 15% 92%;
+    --muted-foreground: 150 8% 50%;
+
+    --accent: 145 20% 88%;
+    --accent-foreground: 150 10% 25%;
+
+    --destructive: 0 50% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 80 15% 88%;
+    --input: 80 15% 88%;
+    --ring: 145 30% 55%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 80 20% 95%;
+    --sidebar-foreground: 150 10% 35%;
+    --sidebar-primary: 145 30% 50%;
+    --sidebar-primary-foreground: 80 25% 97%;
+    --sidebar-accent: 145 20% 90%;
+    --sidebar-accent-foreground: 150 10% 25%;
+    --sidebar-border: 80 15% 88%;
+    --sidebar-ring: 145 30% 55%;
+
+    --warm: 35 40% 95%;
+    --warm-foreground: 35 20% 35%;
+    --calm: 145 25% 92%;
+    --calm-foreground: 145 15% 35%;
+    --gentle: 200 20% 93%;
+    --gentle-foreground: 200 15% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  p, span, li, input, textarea, button, a, label {
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/70 backdrop-blur-sm border border-border/50 shadow-sm;
+  }
+}
