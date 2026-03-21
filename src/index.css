@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 220 15% 25%;
+
+    --card: 40 30% 98%;
+    --card-foreground: 220 15% 25%;
+
+    --popover: 40 30% 98%;
+    --popover-foreground: 220 15% 25%;
+
+    --primary: 160 18% 48%;
+    --primary-foreground: 40 33% 98%;
+
+    --secondary: 35 25% 91%;
+    --secondary-foreground: 220 15% 30%;
+
+    --muted: 35 20% 93%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 200 20% 82%;
+    --accent-foreground: 220 15% 25%;
+
+    --destructive: 0 50% 55%;
+    --destructive-foreground: 40 33% 98%;
+
+    --border: 35 18% 88%;
+    --input: 35 18% 88%;
+    --ring: 160 18% 48%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 38 30% 95%;
+    --sidebar-foreground: 220 12% 40%;
+    --sidebar-primary: 160 18% 48%;
+    --sidebar-primary-foreground: 40 33% 98%;
+    --sidebar-accent: 35 25% 91%;
+    --sidebar-accent-foreground: 220 15% 25%;
+    --sidebar-border: 35 18% 88%;
+    --sidebar-ring: 160 18% 48%;
+
+    /* Custom tokens */
+    --canvas: 38 45% 88%;
+    --canvas-dot: 35 35% 78%;
+    --object-bar: 38 28% 94%;
+    --chat-bg: 40 30% 98%;
+    --chat-ai: 160 15% 92%;
+    --chat-user: 35 25% 91%;
+    --reflect: 160 22% 45%;
+    --reflect-foreground: 40 33% 98%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'DM Sans', system-ui, sans-serif;
+  }
+}
